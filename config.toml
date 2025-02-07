@@ -1,0 +1,30 @@
+base_url = "https://blog.carboxi.de"
+
+# about me
+title = "carboxide"
+description = "The carbons and oxygens of my life."
+author = "scientiac"
+
+# disable sass and search index
+compile_sass = false
+build_search_index = false
+
+# generate atom feed
+feed_filenames = [ "atom.xml" ]
+generate_feeds = true
+
+# enable tags
+taxonomies = [
+    {name = "tags", output = false}
+]
+
+# enable code highlighting
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-light"
+
+# extra stuff
+[extra]
+author = "scientiac"
+email = "iac@scientiac.space"
+profile = "/thumbnail.png"

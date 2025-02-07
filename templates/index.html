@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+{% block content %}
+
+{% set latest_post = paginator.pages | first %}
+
+<div>
+    <div class="h-entry">
+
+        <!---------------- IndieWeb Plate  ------------------>
+        <a class="u-url" style="display: none;" href="{{ latest_post.permalink }}">{{ latest_post.permalink }}</a>
+        <div class="p-author h-card" style="display: none;">
+          <a class="u-url" href="{{ config.base_url }}" rel="me">
+            <img class="u-photo" src="{{ config.extra.profile }}" alt="{{ config.author }}">
+            <span class="p-name">{{ config.author }}</span>
+          </a>
+        </div>
+        <!--------------- /IndieWeb Plate  ------------------>
+
+        <h1 class="p-name">{{ latest_post.title }}</h1>
+
+        <div class="e-content">
+            {{ latest_post.content | safe }}
+        </div>
+
+        <div class="date">
+          {% if latest_post.date %}
+              <time class="dt-published" datetime="{{ latest_post.date | date(format="%Y-%m-%d") }}T00:00:00Z">
+                  {{ latest_post.date | date(format="%B %-d, %Y") }}
+              </time>
+          {% endif %}
+        </div>
+            
+        <div class="tag">
+          {% if latest_post.taxonomies.tags %}
+              {% for tag in latest_post.taxonomies.tags %}
+                  <code class="u-category">{{ tag }}</code>
+              {% endfor %}
+          {% endif %}
+        </div>
+
+    </div>
+</div>
+
+<hr>
+
+{{ macros::next() }}
+
+<hr>
+
+<section>
+  {% set latest_year = paginator.pages[0].date | date(format="%Y") %}
+  {% set latest_month = paginator.pages[0].date | date(format="%B") %}
+  
+  {# Latest Month's Posts Section #}
+  <div class="latest-month-section">
+    <h2 class="latest-month-header">{{ latest_month }}'s Posts</h2>
+    {% for page in paginator.pages %}
+      {% if page.date | date(format="%Y") == latest_year and page.date | date(format="%B") == latest_month %}
+        {% set day = page.date | date(format='%d') | trim_start_matches(pat='0') %}
+        {% set suffix = "th" %}
+        {% if day == "1" or day == "21" or day == "31" %}
+          {% set suffix = "st" %}
+        {% elif day == "2" or day == "22" %}
+          {% set suffix = "nd" %}
+        {% elif day == "3" or day == "23" %}
+          {% set suffix = "rd" %}
+        {% endif %}
+        <article class="listing latest-month-post {% if page == latest_post %}latest-post{% endif %}">
+          <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+          <span class="separator"></span>
+          <time datetime="{{ page.date | date(format='%Y-%m-%d') }}">
+            {{ day }}<sup>{{ suffix }}</sup>
+          </time>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  {# Accordion for Previous Months #}
+  <details class="previous-months-accordion">
+    <summary>Archives</summary>
+    
+    {% set prev_year = "" %}
+    {% set prev_month = "" %}
+    {% for page in paginator.pages %}
+      {% set current_year = page.date | date(format="%Y") %}
+      {% set current_month = page.date | date(format="%B") %}
+      
+      {# Skip latest month posts #}
+      {% if current_year != latest_year or current_month != latest_month %}
+        {# Display year and month header in the same line #}
+        {% if current_year != prev_year or current_month != prev_month %}
+          <div class="date-header">
+            {% if current_year != prev_year %}
+              <span class="year-header">{{ current_year }}</span>
+              {% set_global prev_year = current_year %}
+            {% else %}
+              <span></span> {# Empty span to maintain spacing #}
+            {% endif %}
+            {% if current_month != prev_month %}
+              <span class="month-header">{{ current_month }}</span>
+              {% set_global prev_month = current_month %}
+            {% endif %}
+          </div>
+        {% endif %}
+        
+        {% set day = page.date | date(format='%d') | trim_start_matches(pat='0') %}
+        {% set suffix = "th" %}
+        {% if day == "1" or day == "21" or day == "31" %}
+          {% set suffix = "st" %}
+        {% elif day == "2" or day == "22" %}
+          {% set suffix = "nd" %}
+        {% elif day == "3" or day == "23" %}
+          {% set suffix = "rd" %}
+        {% endif %}
+        <article class="listing">
+          <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+          <span class="separator"></span>
+          <time datetime="{{ page.date | date(format='%Y-%m-%d') }}">
+            {{ day }}<sup>{{ suffix }}</sup>
+          </time>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </details>
+</section>
+
+{% endblock content %}

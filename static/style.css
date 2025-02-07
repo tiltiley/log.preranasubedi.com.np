@@ -1,0 +1,195 @@
+@font-face {
+  font-family:"Libertinus";
+  font-style:bold;
+  font-stretch:normal;
+  font-display:swap;
+  font-weight: 400;
+  src:url(/fonts/LibertinusSerif-Bold.woff2)format("woff2")
+}
+@font-face {
+  font-family:"Libertinus";
+  font-style:italic;
+  font-stretch:normal;
+  font-display:swap;
+  font-weight:400;
+  src:url(/fonts/LibertinusSerif-Italic.woff2)format("woff2")
+}
+@font-face {
+  font-family:"Libertinus";
+  font-style:normal;
+  font-stretch:normal;
+  font-display:swap;
+  font-weight:400;
+  src:url(/fonts/LibertinusSerif-Regular.woff2)format("woff2")
+}
+
+* {
+  --column-width: 70ch;
+  --font-family:"Libertinus", P052, serif;
+  --font-family-sans:system-ui, sans-serif;
+  --font-family-mono:ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  --font-size:clamp(15px, 0.40vw + 13px, 35px);
+  --font-line-height:clamp(26px, 0.78vw + 22.488px, 42px);
+  --font-style:normal;
+}
+
+body {
+  background-color: white;
+  margin: 0 auto;
+  color: rgb(71, 71, 71);
+  padding-top: 8em;
+  font-family:var(--font-family);
+  font-size:var(--font-size);
+  line-height: var(--font-line-height);
+  font-style:var(--font-style);
+  width: min(95%, var(--column-width));
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+summary {
+  text-align: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.latest-month-header {
+  text-align: center;
+}
+
+pre {
+  max-width: 100%;
+  overflow: auto;
+  padding: 0.25rem 1rem;
+}
+
+body > section > h1:nth-child(1) {
+  margin-top: 2.5rem;
+}
+
+.p-name {
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+time sup {
+  font-size: 0.75em;
+  vertical-align: super;
+}
+
+.date, .tag {
+  display: flex;
+  justify-content: right;
+}
+
+.dt-published, .u-category {
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.u-category:before {
+  content: "#";
+}
+
+.u-category {
+    margin-bottom: 2rem;
+}
+
+.listing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0;
+  gap: 0.5rem;
+}
+
+.listing a {
+  text-decoration: none;
+  color: inherit;
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+.listing time {
+  white-space: nowrap;
+}
+
+.separator {
+  flex-grow: 1000;
+  height: 1px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+.date-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.year-header {
+  text-align: left;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.month-header {
+  text-align: right;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  color: gray;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem 0 2.5rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  padding-inline: 0 1rem;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  overflow: visible;
+  text-align: center;
+  margin: 2.5em 0;
+}
+
+hr::before {
+  content: '***';
+  display: inline-block;
+  position: relative;
+  background: white;
+  font-size: 2em;
+}
+
+.latest-post, .current-post {
+  font-weight: 800;
+  .separator {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+  }
+}
+
+.previous-months-accordion {
+  margin: 2rem 0;
+}
+
+.next {
+  text-align: center;
+  font-style: italic;
+}
