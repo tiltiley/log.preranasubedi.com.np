@@ -23,3 +23,12 @@ Along with hating, forgiving is essential too. And letting people know what they
 done wrong to deserve hatred is one of the best things that can be done [_Also one of the
 toughest thing though_]. So, the life of hate is as long as you want it to be and so is
 the life of love. [_But we are talking about hate, here._]
+
+Though I am talking about hate and love here, it isn't really binary. You can have a bit of
+both in something like, I love NixOS [_It's a linux distro._] but I hate it because it sometimes
+makes a simple things complicated. [_I mean, it'll be doable._] [_But, at what cost?_] [_Time!_]
+
+Enough of this talking, I have work to do. Lastly, learning to hate is essential, because it
+has a purpose and like love. [_I am feeling_][_cringe_][_while writing "love" but not "hate",_]
+
+[_Love a little hate a little more. XD_]
