@@ -28,7 +28,7 @@
 
         <div class="date">
           {% if page.date %}
-              <time class="dt-published" datetime="{{ page.date | date(format="%Y-%m-%d") }}T00:00:00Z">
+              <time class="dt-published" datetime="{{ page.date | date(format="%Y-%m-%dT%H:%M:%SZ") }}">
                   {{ page.date | date(format="%B %-d, %Y") }}
               </time>
           {% endif %}

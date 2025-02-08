@@ -4,6 +4,7 @@
   <meta charset="utf-8">
     <title>{{ config.title }}</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
 
     {% block rss %}
     <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
@@ -15,7 +16,6 @@
     <!----------------  Mastodon  ------------------>
     <meta name="fediverse:creator" content="@scientiac@fosstodon.org">
     <!---------------- /Mastodon  ------------------>
-
 </head>
 
 <body>

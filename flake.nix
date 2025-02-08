@@ -24,7 +24,14 @@
         default = pkgs.mkShell {
           # The Nix packages provided in the environment
           # Add any you need here
-          packages = with pkgs; [ zola ];
+          packages = with pkgs; [
+            zola
+            (writeShellScriptBin "now" ''
+              current_date=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+              printf "%s" "$current_date" | wl-copy
+              echo "$current_date"
+            '')
+          ];
 
           # Set any environment variables for your dev shell
           env = { };
