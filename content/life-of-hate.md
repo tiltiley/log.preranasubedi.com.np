@@ -16,7 +16,7 @@ and more things hate it even more.
 Like __love__,  __hate__ is also a strong word. And it is __Heavy__. Like love, hate also loses
 it's meaning if used too often and too many times. [_I have used "too" here, don't say that it doesn't,
 too much of anything is bad._] And that is why I want the things I have to be small and meaningful
-[_It's kinda like unblocking some people on `<your social media here>` because the blocklist is getting crowded_]
+[_It's kinda like unblocking some people on `<your social media here>` because the blocklist is getting crowded._]
 [_What do you mean you've never done it?_] .
 
 Along with hating, forgiving is essential too. And letting people know what they have
@@ -29,6 +29,6 @@ both in something like, I love NixOS [_It's a linux distro._] but I hate it beca
 makes a simple things complicated. [_I mean, it'll be doable._] [_But, at what cost?_] [_Time!_]
 
 Enough of this talking, I have work to do. Lastly, learning to hate is essential, because it
-has a purpose and like love. [_I am feeling_][_cringe_][_while writing "love" but not "hate",_]
+has a purpose and like love. [_I am feeling_] [_cringe_] [_while writing "love" but not "hate"._]
 
 [_Love a little hate a little more. XD_]
