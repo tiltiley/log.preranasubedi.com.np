@@ -2,8 +2,9 @@
 title = "Roses"
 date = 2025-02-08
 [taxonomies]
-tags = ["valentine", "woman", "red", "green", "blue", "orange"]
+tags = ["valentine", "flowers"]
 +++
 
-Thorny yet beautiful. For someone who picked flowers everyday, I didn't pick one today.
+__Thorny__ yet _beautiful_. For `someone` who ~~picked~~ flowers everyday, I didn't pick one today.
 Happy roses!
+
