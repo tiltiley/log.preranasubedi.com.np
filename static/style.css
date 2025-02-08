@@ -90,7 +90,11 @@ time sup {
 
 .date, .tag {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
+}
+
+.tag {
+  flex-wrap: wrap;
 }
 
 .dt-published, .u-category {
@@ -103,9 +107,11 @@ time sup {
 }
 
 .u-category {
+  padding-inline: 0.1rem;
   margin-top: 0;
   margin-bottom: 5rem;
 }
+
 
 .listing {
   display: flex;
