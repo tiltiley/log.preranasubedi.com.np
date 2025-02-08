@@ -31,13 +31,15 @@
   --font-size:clamp(15px, 0.40vw + 13px, 35px);
   --font-line-height:clamp(26px, 0.78vw + 22.488px, 42px);
   --font-style:normal;
+  box-sizing: border-box;
 }
 
 body {
   background-color: white;
   margin: 0 auto;
+  padding:  8em 1em 1em 1em;
+  overflow: none;
   color: rgb(71, 71, 71);
-  padding-top: 8em;
   font-family:var(--font-family);
   font-size:var(--font-size);
   line-height: var(--font-line-height);
@@ -58,10 +60,12 @@ summary {
   text-align: center;
   font-weight: 800;
   font-size: 0.9rem;
+  list-style: none;
 }
 
 .latest-month-header {
   text-align: center;
+  margin-top: 8rem;
 }
 
 pre {
@@ -99,7 +103,8 @@ time sup {
 }
 
 .u-category {
-    margin-bottom: 2rem;
+  margin-top: 0;
+  margin-bottom: 5rem;
 }
 
 .listing {
@@ -153,13 +158,15 @@ time sup {
 footer {
   display: flex;
   justify-content: space-around;
-  margin: 5rem 0 2.5rem 0;
+  margin: 8rem 0 2.5rem 0;
 }
 
 footer a {
   text-decoration: none;
   color: inherit;
-  padding-inline: 0 1rem;
+  padding: 0 1rem;
+  font-weight: 800;
+  font-size: 0.9rem;
 }
 
 hr {
@@ -167,7 +174,7 @@ hr {
   height: 0;
   overflow: visible;
   text-align: center;
-  margin: 2.5em 0;
+  margin: 2em 0 3em 0;
 }
 
 hr::before {
@@ -186,10 +193,11 @@ hr::before {
 }
 
 .previous-months-accordion {
-  margin: 2rem 0;
+  margin: 8rem 0;
 }
 
 .next {
   text-align: center;
   font-style: italic;
+  font-size: 0.9em;
 }
