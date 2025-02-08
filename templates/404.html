@@ -19,17 +19,23 @@
 </head>
 
 <body>
-    {% block content %} {% endblock %}
+{% block content %}
+    <div class="h-entry">
+        <!---------------- IndieWeb Plate  ------------------>
+        <div class="p-author h-card" style="display: none;">
+          <a class="u-url" href="{{ config.base_url }}" rel="me">
+            <img class="u-photo" src="{{ config.extra.profile }}" alt="{{ config.author }}">
+            <span class="p-name">{{ config.author }}</span>
+          </a>
+        </div>
+        <!--------------- /IndieWeb Plate  ------------------>
+
+        <h1 class="p-name"><a href="{{ config.base_url }}">404</a></h1>
+        <p>Looking for something?</p>
+
+    </div>
+{% endblock content %}
 </body>
 
-<footer>
-  {% block footer %}
-  <p>
-  <a href="/atom.xml">rss</a>
-  <a href="https://scientiac.space" >author</a>
-  <a href="https://github.com/scientiac/blog.carboxi.de" target="_blank">source</a>
-  <a href="/now" >/now</a>
-  </p>
-  {% endblock footer %}
-</footer>
 </html>
+
