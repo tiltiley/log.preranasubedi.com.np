@@ -310,7 +310,6 @@ tr:hover {
 
 .inner-voice code, .inner-voice {
   position: relative;
-  white-space: nowrap;
   font-family: "Caveat", serif;
   font-size: 1rem;
   color: #555555;
