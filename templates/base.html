@@ -7,7 +7,7 @@
     <script src="/script.js"></script>
 
     {% block rss %}
-    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
     {% endblock %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@
 <footer>
   {% block footer %}
   <p>
-  <a href="/atom.xml">Feed</a>
+  <a href="/rss.xml">Feed</a>
   <a href="https://scientiac.space" >Author</a>
   <a href="https://github.com/scientiac/blog.carboxi.de" target="_blank">Source</a>
   <a href="/now" >Now</a>

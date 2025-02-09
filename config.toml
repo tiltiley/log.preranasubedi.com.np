@@ -3,14 +3,14 @@ base_url = "https://blog.carboxi.de"
 # about me
 title = "carboxide"
 description = "The carbons and oxygens of my life."
-author = "scientiac"
+author ="scientiac"
 
 # disable sass and search index
 compile_sass = false
 build_search_index = false
 
 # generate atom feed
-feed_filenames = [ "atom.xml" ]
+feed_filenames = [ "atom.xml", "rss.xml" ]
 generate_feeds = true
 
 # enable tags
