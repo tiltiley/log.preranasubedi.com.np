@@ -1,7 +1,16 @@
 {% macro next() %}
-<section class="next">
-    <h2>Wondering?</h2>
-  <div><p>Maybe explore my archives. Find me on the <a href="https://fosstodon.org/@scientiac">Mastodon</a>. Check my main site <a href="https://scientiac.space/">scientiac.space</a>. Follow the site using <a href="{{ get_url(path="rss.xml", trailing_slash=false) }}">RSS</a>. <a href="https://fosstodon.org/@scientiac">Send</a> me your blog and I’ll read it.</p></div>
-</section>
+  <section class="next">
+      <h2>Wondering?</h2>
+    <div><p>Maybe explore my archives. Find me on the <a href="https://fosstodon.org/@scientiac">Mastodon</a>. Check my main site <a href="https://scientiac.space/">scientiac.space</a>. Follow the site using <a href="{{ get_url(path="rss.xml", trailing_slash=false) }}">RSS</a>. <a href="https://fosstodon.org/@scientiac">Send</a> me your blog and I’ll read it.</p></div>
+  </section>
 {% endmacro next %}
 
+
+{% macro indiewebcard() %}
+  <div class="p-author h-card" style="display: none;">
+    <a class="u-url" href="{{ config.base_url }}" rel="me">
+      <img class="u-photo" src="{{ config.extra.profile }}" alt="{{ config.author }}">
+      <span class="p-name">{{ config.author }}</span>
+    </a>
+  </div>
+{% endmacro indieweb %}

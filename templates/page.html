@@ -10,15 +10,9 @@
 
 <div>
     <div class="h-entry">
-        <!---------------- IndieWeb Plate  ------------------>
-        <a class="u-url" style="display: none;" href="{{ page.permalink }}">{{ page.permalink }}</a>
-        <div class="p-author h-card" style="display: none;">
-          <a class="u-url" href="{{ config.base_url }}" rel="me">
-            <img class="u-photo" src="{{ config.extra.profile }}" alt="{{ config.author }}">
-            <span class="p-name">{{ config.author }}</span>
-          </a>
-        </div>
-        <!--------------- /IndieWeb Plate  ------------------>
+
+    <a class="u-url" style="display: none;" href="{{ page.permalink }}">{{ page.permalink }}</a>
+    {{ macros::indiewebcard() }}
 
     <h1 class="p-name"><a href="{{ config.base_url }}">{{ page.title }}</a></h1>
 

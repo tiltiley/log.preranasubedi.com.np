@@ -7,15 +7,8 @@
 <div>
     <div class="h-entry">
 
-        <!---------------- IndieWeb Plate  ------------------>
         <a class="u-url" style="display: none;" href="{{ latest_post.permalink }}">{{ latest_post.permalink }}</a>
-        <div class="p-author h-card" style="display: none;">
-          <a class="u-url" href="{{ config.base_url }}" rel="me">
-            <img class="u-photo" src="{{ config.extra.profile }}" alt="{{ config.author }}">
-            <span class="p-name">{{ config.author }}</span>
-          </a>
-        </div>
-        <!--------------- /IndieWeb Plate  ------------------>
+        {{ macros::indiewebcard() }}
 
         <h1 class="p-name">{{ latest_post.title }}</h1>
 
