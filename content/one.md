@@ -1,6 +1,6 @@
 +++
 title = "Template"
-date = 2014-03-14
+date = 2014-03-14T15:09:26+05:45
 [taxonomies]
 tags = ["template"]
 +++

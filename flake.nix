@@ -27,7 +27,7 @@
           packages = with pkgs; [
             zola
             (writeShellScriptBin "now" ''
-              current_date=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+              current_date=$(date +"%Y-%m-%dT%H:%M:%S%z")
               printf "%s" "$current_date" | wl-copy
               echo "$current_date"
             '')

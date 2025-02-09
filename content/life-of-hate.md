@@ -1,6 +1,6 @@
 +++
 title = "Life of Hate"
-date = 2025-02-08T09:25:29Z
+date = 2025-02-08T15:10:29+05:45
 [taxonomies]
 tags = ["valentine", "hate"]
 +++
