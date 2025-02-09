@@ -3,7 +3,7 @@ base_url = "https://log.preranasubedi.com.np"
 # about me
 author ="(me@preranasubedi.com.np) Prerana Subedi"
 title = "sunakhari's logs"
-description = "Log of my life."
+description = "I just write things."
 
 # disable sass and search index
 compile_sass = false
