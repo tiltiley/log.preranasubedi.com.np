@@ -1,3 +1,3 @@
-# blog.carboxi.de
+# flux.carboxi.de
 
-The carbons and oxygens of my life.
+The flow of carbons and oxygens in my brain.
