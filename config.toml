@@ -27,3 +27,4 @@ highlight_theme = "base16-ocean-light"
 [extra]
 email = "iac@scientiac.space"
 profile = "/thumbnail.png"
+note = "I am a computer engineering student who loves FOSS and is learning about privacy, the internet, and languages. I sometimes write poems, stories, and occasionally some articles too. TL;DR: I write things, test things, make things, and break things."
