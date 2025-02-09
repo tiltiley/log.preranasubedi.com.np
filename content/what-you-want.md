@@ -19,7 +19,7 @@ on your toes grounded [_and frightened_]. And that is a good thing.
 
 Things can be owned by two ways, [_fortunately_] the other way is
 by earning. And this is probably the most important thing to
-remember because, what you've earned yourself cant be taken by
+remember because, what you've earned yourself can't be taken by
 someone else. [_except for thieves :x_]
 
 I have gotten a lot of things by just asking for it, [_sometimes
@@ -27,7 +27,7 @@ I forget that words are magic_] from _"things"_ [_hardware_] to
 _"love"_ [_software?  (´ᴗ`‘)_]. The thing that I have realized from
 my experiances is that [_like other things that I try to do myself
 until it is not possible_] I have to get things by earning things
-myself. [_I said things so many times, it has stopped making sense XDXD_]
+myself. [_I have said ""things"" so many times, it has stopped making sense XDXD_]
 
 [_Quit asking! unless urgent?_] [_Asking is necessary, but only when it
 is a necessity_]
