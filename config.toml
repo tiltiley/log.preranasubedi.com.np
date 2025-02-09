@@ -1,9 +1,9 @@
-base_url = "https://blog.carboxi.de"
+base_url = "https://log.preranasubedi.com.np"
 
 # about me
-author ="(iac@scientiac.space) scientiac"
-title = "carboxide"
-description = "The carbons and oxygens of my life."
+author ="(me@preranasubedi.com.np) Prerana Subedi"
+title = "sunakhari's logs"
+description = "Log of my life."
 
 # disable sass and search index
 compile_sass = false
@@ -25,6 +25,6 @@ highlight_theme = "base16-ocean-light"
 
 # extra stuff
 [extra]
-email = "iac@scientiac.space"
+email = "me@preranasubedi.com.np"
 profile = "/thumbnail.png"
-note = "I am a computer engineering student who loves FOSS and is learning about privacy, the internet, and languages. I sometimes write poems, stories, and occasionally some articles too. TL;DR: I write things, test things, make things, and break things."
+note = "I love to write, that's all."
