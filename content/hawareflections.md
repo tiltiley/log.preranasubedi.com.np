@@ -4,7 +4,7 @@ date = 2025-04-04T15:09:26+05:45
 [taxonomies]
 tags = ["thoughts"]
 +++
-Friday, Jan 17, 2025
+
 Ran late for class as the rule was to not skip the breakfast from today. 
 I mixed muesli, oats, chia seeds, honey, and curd together, stirred it, left for 15 minutes and ate after 15 minutes, reached 15 minutes late.
 To get up 15 minutes early would be such a torture to my mind omg I’ll have to train it nicely. 
