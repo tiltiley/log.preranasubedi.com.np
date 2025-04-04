@@ -9,7 +9,7 @@ Ran late for class as the rule was to not skip the breakfast from today.
 I mixed muesli, oats, chia seeds, honey, and curd together, stirred it, left for 15 minutes and ate after 15 minutes, reached 15 minutes late.
 To get up 15 minutes early would be such a torture to my mind omg I’ll have to train it nicely. 
 I was thinking of a subject for writing an article as a final assignment for creative writing.
-I struck on the thought of street childs in Basantapur and wondered, how their day might pass, with every single struggle to sell a bottle of water, to every single person passing by.
+I struck on the thought of street childs in Basantapur and wondered, how their day might pass, with every single struggle to sell a bottle of water, to every single person passing by.  
 And I pitched the idea in class. All of them suggested that I give it a shot.
 I had a very normal day today. Office was not so good, yet I was excited to reach for my hair appointment.
 I felt like around one month of a burden fell off of my hair after I saw myself in the mirror. Spent much but at least I’m happy. 
