@@ -1,6 +1,6 @@
 +++
-title: "Mamaghar"
-date: 2026-02-20T18:48:23+05:45
+title = "Mamaghar"
+date = 2026-02-20T18:48:23+05:45
 [taxonomies]
 tags = ["log"]
 +++
