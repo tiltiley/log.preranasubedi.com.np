@@ -11,13 +11,13 @@
 <div>
     <div class="h-entry">
 
-    <a class="u-url" style="display: none;" href="{{ page.permalink }}">{{ page.permalink }}</a>
     {{ macros::indiewebcard() }}
 
     <h1 class="p-name"><a href="{{ config.base_url }}">{{ page.title }}</a></h1>
-
-        <div class="e-content">
-            {{ page.content | safe }}
+        <a class="u-url" href="{{ page.permalink }}" style="display: none;"></a>
+        <div class="e-content p-content">
+          {% set content = page.content | replace(from="[<em>", to='<em class="inner-voice">') | replace(from="</em>]", to="</em>") %}
+            {{ content | safe }}
         </div>
 
         <div class="date">
@@ -31,7 +31,7 @@
         <div class="tag">
           {% if page.taxonomies.tags %}
               {% for tag in page.taxonomies.tags %}
-                  <p class="u-category">{{ tag }}</p>
+                  <a class="u-category" href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{ tag }}</a>
               {% endfor %}
           {% endif %}
         </div>
@@ -39,6 +39,8 @@
 </div>
 
 <div class="spacing"><div>
+
+{{ macros::webmention() }}
 
 {{ macros::next() }}
 

@@ -13,7 +13,8 @@
         <h1 class="p-name">{{ latest_post.title }}</h1>
 
         <div class="e-content">
-            {{ latest_post.content | safe }}
+          {% set content = latest_post.content | replace(from="[<em>", to='<em class="inner-voice">') | replace(from="</em>]", to="</em>") %}
+            {{ content | safe }}
         </div>
 
         <div class="date">
@@ -27,7 +28,7 @@
         <div class="tag">
           {% if latest_post.taxonomies.tags %}
               {% for tag in latest_post.taxonomies.tags %}
-                  <p class="u-category">{{ tag }}</p>
+                  <a class="u-category" href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{ tag }}</a>
               {% endfor %}
           {% endif %}
         </div>

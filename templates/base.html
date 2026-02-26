@@ -4,7 +4,8 @@
   <meta charset="utf-8">
     <title>{{ config.title }}</title>
     <link rel="stylesheet" href="/style.css">
-    <script src="/script.js"></script>
+
+    <link rel="webmention" href="https://webmention.io/{{config.extra.url}}/webmention" />
 
     {% block rss %}
       <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
@@ -21,9 +22,10 @@
 <footer>
   {% block footer %}
   <p>
+  <a href="/" >Main</a>
   <a href="/rss.xml">Feed</a>
-  <a href="https://preranasubedi.com.np" >Author</a>
-  <a href="https://github.com/tiltiley/log.preranasubedi.com.np" target="_blank">Source</a>
+  <a href="/author" >Author</a>
+  <a href="/nexus" >Nexus</a>
   <a href="/now" >Now</a>
   </p>
   {% endblock footer %}

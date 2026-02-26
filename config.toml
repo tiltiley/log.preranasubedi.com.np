@@ -15,16 +15,11 @@ generate_feeds = true
 
 # enable tags
 taxonomies = [
-    {name = "tags", output = false}
+    {name = "tags", output = true}
 ]
 
-# enable code highlighting
-[markdown]
-highlight_code = true
-highlight_theme = "base16-ocean-light"
-
-# extra stuff
 [extra]
+url="log.preranasubedi.com.np"
 email = "me@preranasubedi.com.np"
 profile = "/thumbnail.png"
 note = "I just love to write, that's all."

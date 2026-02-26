@@ -1,7 +1,7 @@
 {% macro next() %}
   <section class="next">
       <h2>Wondering?</h2>
-    <div><p>Maybe explore my archives. Check my main site <a href="https://preranasubedi.com.np/">preranasubedi.com.np</a>. Follow the site using <a href="{{ get_url(path="rss.xml", trailing_slash=false) }}">RSS</a>. <a href="mailto:me@preranasubedi.com.np">Send</a> me a message and I’ll read it.</p></div>
+      <div><p>Maybe explore my <a href="/tags">tags</a> & archives and send me a <a href="https://indieweb.org/Webmention">webmention</a>. Follow the site using <a href="{{ get_url(path="rss.xml", trailing_slash=false) }}">RSS</a>. Just roam arount a bit.</p></div>
   </section>
 {% endmacro next %}
 
@@ -9,9 +9,83 @@
 {% macro indiewebcard() %}
   <div class="p-author h-card" style="display: none;">
     <a class="u-url" href="{{ config.base_url }}" rel="me">
+      <a class="u-email" href="mailto:{{config.extra.email}}" rel="me">
       <img class="u-photo" src="{{ config.extra.profile }}" alt="{{ config.author }}">
       <span class="p-name">{{ config.author }}</span>
       <p class="p-note">{{ config.extra.note }}</p>
     </a>
   </div>
 {% endmacro indieweb %}
+
+{% macro webmention() %}
+{% set data = load_data(path="webmentions.json", format="json") %}
+{% set has_mentions = false %}
+
+{# First pass: check if there are any webmentions for this page #}
+{% for links in data.links %}
+    {% set trimmed_path = links.target | trim_start_matches(pat="https://" ~ config.extra.url ~ "/") | trim_end_matches(pat="/") %}
+    {% if trimmed_path == "" %}
+        {% set relative_path = "_index.md" %}
+    {% else %}
+        {% set relative_path = trimmed_path ~ ".md" %}
+    {% endif %}
+    {% set target_page = get_page(path=relative_path) %}
+    {% if not links.source is starting_with("https://" ~ config.extra.url) %}
+      {% if links.target == page.permalink %}
+          {% set_global has_mentions = true %}
+      {% endif %}
+    {% endif %}
+{% endfor %}
+
+{# Only render the section if there are webmentions #}
+{% if has_mentions %}
+<div id="webmention" class="next">
+<hr>
+<h2>Nexus</h2>
+<div class="interaction-box">
+{% for links in data.links %}
+    {% set trimmed_path = links.target | trim_start_matches(pat="https://" ~ config.extra.url ~ "/") | trim_end_matches(pat="/") %}
+    {% if trimmed_path == "" %}
+        {% set relative_path = "_index.md" %}
+    {% else %}
+        {% set relative_path = trimmed_path ~ ".md" %}
+    {% endif %}
+    {% set target_page = get_page(path=relative_path) %}
+    {% if not links.source is starting_with("https://" ~ config.extra.url) %}
+      {% if links.target == page.permalink %}
+          {% if links.activity.type == "like" %}
+              <div class="mention-profile like">
+                  {% if links.data.author.photo %}
+                  <a href="{{ links.source }}">
+                    <img src="{{ links.data.author.photo }}">
+                  </a>
+                  {% endif %}
+              </div>
+          {% endif %}
+          
+          {% if links.activity.type == "link" %}
+              <div class="mention-profile link">
+                  {% if links.data.author.photo %}
+                  <a href="{{ links.source }}">
+                    <img src="{{ links.data.author.photo }}">
+                  </a>
+                  {% endif %}
+              </div>
+          {% endif %}
+          
+          {% if links.activity.type == "reply" %}
+              <div class="mention-profile reply">
+                  {% if links.data.author.photo %}
+                  <a href="{{ links.source }}">
+                    <img src="{{ links.data.author.photo }}">
+                  </a>
+                  {% endif %}
+              </div>
+          {% endif %}
+      {% endif %}
+    {% endif %}
+{% endfor %}
+</div>
+</div>
+{% endif %}
+{% endmacro webmention %}
