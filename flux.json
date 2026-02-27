@@ -1,0 +1,10 @@
+{
+  "contentDir": "content",
+  "useStaticFolder": true,
+  "staticDir": "static",
+  "assetsDir": "Images",
+  "postTemplate": "+++\ntitle = \"{{title}}\"\ndate = {{date}}T{{time}}+05:45\n[taxonomies]\ntags = [\"log\"]\n+++\n",
+  "siteUrl": "https://log.preranasubedi.com.np",
+  "showAdvancedFiles": false,
+  "syncSettingsToGitHub": true
+}
