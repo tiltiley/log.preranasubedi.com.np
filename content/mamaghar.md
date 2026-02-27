@@ -7,4 +7,4 @@ tags = ["log"]
 
 Today, I came to mamaghar, met Spandan and Stuti. And, I found out that Stuti is the name of a famous department store in Dharan.
 
-![Hehehe.jpeg](/images/Hehehe.jpeg)
+![Hehehe.jpeg](/Images/Hehehe.jpeg)
