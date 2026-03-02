@@ -11,4 +11,8 @@ They immediately reacted so alerted and concerned and I felt soo nice. Living al
 
 I am dropping my tears as I'm writing this. I didn't know I was this lonely that small gesture that was natural from my parents would make me feel this way. I had place to run to and tell this happened and this I think is the first time I had told them immediately without being concerned they might be tensed or so. I don't know how to explain this rn. But I might need more reflection on this. 
 
-At this period of my life, I need to feel loved and supported, otherwise I don't know what will happen to me. I don't want to deal with the other side yet. I want to have these pillar kinda feelings by my side so that I can deal with the other side strongly. I can be a strong independent woman later, but first I need to be loved, I need people and the sense of belonging utmost. I really do. Wow I didn't realize this. Ughhhhh![Crybaby.jpeg](/Images/Crybaby.jpeg)
+At this period of my life, I need to feel loved and supported, otherwise I don't know what will happen to me. I don't want to deal with the other side yet. I want to have these pillar kinda feelings by my side so that I can deal with the other side strongly. I can be a strong independent woman later, but first I need to be loved, I need people and the sense of belonging utmost. I really do. Wow I didn't realize this. Ughhhhh!
+
+![Crybaby.jpeg](/Images/Crybaby.jpeg)
+
+Does my eyes say otherwise? Pls tell me no.
