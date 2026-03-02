@@ -13,6 +13,6 @@ I am dropping my tears as I'm writing this. I didn't know I was this lonely that
 
 At this period of my life, I need to feel loved and supported, otherwise I don't know what will happen to me. I don't want to deal with the other side yet. I want to have these pillar kinda feelings by my side so that I can deal with the other side strongly. I can be a strong independent woman later, but first I need to be loved, I need people and the sense of belonging utmost. I really do. Wow I didn't realize this. Ughhhhh!
 
-![Cryy cry until u die.jpeg](/Images/Cryy cry until u die.jpeg)
+![Cry.jpeg](/Images/Cry.jpeg)
 
 Does my eyes say otherwise? Pls tell me no.
