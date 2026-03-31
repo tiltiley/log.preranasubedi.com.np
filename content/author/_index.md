@@ -3,7 +3,7 @@ title = "My silly spice page"
 +++
 Hi, Hello and नमस्ते (Namaste) 🙏
 
-Welcome to my little Nepali kitchen which I have named silly spice page.
+I am Prerana and I'd like to welcome you to my little kitchen which I have named silly spice page.
 
 This is where I share the recipes I grew up eating, the dishes my family makes with love, and the flavors I want my international friends to experience. 
 
