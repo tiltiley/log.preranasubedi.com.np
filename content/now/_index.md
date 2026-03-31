@@ -2,4 +2,4 @@
 title = "Now"
 +++
 
-Brainstorming what to cook next🫠
+Brainstorming what to cook next...🫠
