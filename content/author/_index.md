@@ -9,4 +9,4 @@ This is where I share the recipes I grew up eating, the dishes my family makes w
 
 Expect comfort food, family stories, a little chaos, and lots of spice as you loooove😉
 
-Come on roll your sleeves and dine well! 😋 
+Come on roll your sleeves and prepare to dine well! 😋 
