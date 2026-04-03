@@ -80,3 +80,6 @@ Final process: Serve
 
 Completed? Congratulationssss!
 `( You are now emotionally connected to my family kitchen.)`
+
+Want to share your experience about the food or any suggestions? 
+You can always mail me --> preranasubedi59@gmail.com 
