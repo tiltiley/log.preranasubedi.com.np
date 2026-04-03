@@ -71,15 +71,15 @@ Process 3: Add the Potatoes
 * Cover and cook on low heat for 3 minutes.
 * Then sprinkle the chopped coriander leaves on top, cover again, and cook for 2 more minutes.
 * Give everything one final stir.
-* At this point, pause for a second and smell it, that part is mandatory, `*you did it chef!!*`
+* At this point, pause for a second and smell it, that part is mandatory, [_you did it chef!!_]
 
 Final process: Serve
 
-* Serve your आलुदम (Aalu dam). It goes beautifully with rice, roti/bread or honestly, just on its own `*with a dramatic amount of satisfaction.*
+* Serve your आलुदम (Aalu dam). It goes beautifully with rice, roti/bread or honestly, just on its own [_with a dramatic amount of satisfaction._]
 `
 
 Completed? Congratulationssss!
 `( You are now emotionally connected to my family kitchen.)`
 
 Want to share your experience about the food or any suggestions? 
-You can always mail me --> preranasubedi59@gmail.com 
+You can always <a href="mailto:i@preranasubedi.com.np">email</a> me.
