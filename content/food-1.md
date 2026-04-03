@@ -2,7 +2,7 @@
 title = "Aalu Dam (आलुदम )"
 date = 2026-04-04T14:27:15+05:45
 [taxonomies]
-tags = ["The silly spice page"]
+tags = ["The Silly Spice Page"]
 +++
 
 My mom said it takes years of experience and experiments of hit and trials to make a perfect recipe for any kind of food. I have started this small page where I will be sharing some recipes of Nepalese cuisine. I hope to be consistent with this.
