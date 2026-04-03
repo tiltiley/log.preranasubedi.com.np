@@ -79,7 +79,7 @@ Final process: Serve
 `
 
 Completed? Congratulationssss!
-`( You are now emotionally connected to my family kitchen.)`
+[_You are now emotionally connected to my family kitchen._]
 
 Want to share your experience about the food or any suggestions? 
 You can always <a href="mailto:i@preranasubedi.com.np">email</a> me.
