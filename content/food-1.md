@@ -37,7 +37,7 @@ I am the only person in my home to be Vegetarian and they find it very hard to d
 
 *Let's get cooking!*
 
-Before we start:
+### Before we start:
 * Boil the potatoes until they are fully cooked. Test with a fork.
 * Cut the boiled potatoes into medium-sized pieces.
 * Slice the tomatoes.
