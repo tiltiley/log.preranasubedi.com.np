@@ -15,7 +15,7 @@ I am the only person in my home to be Vegetarian and they find it very hard to d
 
 *Roll your sleeves up now and get ready for being a chef trained by prerana’s silliness!*
 
-What you will need:
+### What you will need:
 
 1. 1 kg potatoes
 1. 1 kg tomatoes
@@ -44,13 +44,13 @@ Before we start:
 * Finely chop the onions, green chilies, and coriander leaves.
 * Peel the ginger and garlic, then crush or blend them into a fine paste.
 
-Process 1: Toast the Sesame Seeds
+### Process 1: Toast the Sesame Seeds
 
 * Place a pan on low heat and add 3 tablespoons of white sesame seeds.
 * Stir for a while, then cover the pan. Let them heat gently for 2 to 3 minutes, just until softened and lightly toasted.
 * Remove them, grind them into a powder, and keep them in a separate bowl.
 
-Process 2: Make the tomato sauce
+### Process 2: Make the tomato sauce
 
 * Place the pan back on low heat.
 * Add 3 tablespoons of vegetable oil. Once the oil is hot, add ¼ tablespoon fenugreek seeds. And yes, if measuring stresses you out, just pretend you are Prerana and trust your instincts. Are you confused? Just count and put 5 seeds.
@@ -64,7 +64,7 @@ Process 2: Make the tomato sauce
 * Cover and cook for about 2 more minutes, until the mixture becomes rich and saucy, almost like a thick tomato gravy.
 
 
-Process 3: Add the Potatoes
+### Process 3: Add the Potatoes
 
 * Add the boiled potato pieces into the tomato sauce.
 * Mix well so the sauce coats all the potatoes nicely.
@@ -73,7 +73,7 @@ Process 3: Add the Potatoes
 * Give everything one final stir.
 * At this point, pause for a second and smell it, that part is mandatory, [_you did it chef!!_]
 
-Final process: Serve
+### Final process: Serve
 
 * Serve your आलुदम (Aalu dam). It goes beautifully with rice, roti/bread or honestly, just on its own [_with a dramatic amount of satisfaction._]
 `
