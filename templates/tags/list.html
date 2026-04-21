@@ -4,9 +4,29 @@
 
 <h1 class="p-name"><a href="{{ config.base_url }}">A total of {{ terms | length }} Tags.</a></h1>
 
-<b><span> • </span></b>
-{% for tag in terms %}
-<a href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}"><b>{{tag.name}} <sup>{{ tag.pages | length }}</sup></a><span> • </span></b>
-{% endfor %}
+<div class="tag-cloud">
+    {% set max_count = 1 %}
+    {% for tag in terms %}
+    {% if tag.pages | length > max_count %}
+    {% set_global max_count = tag.pages | length %}
+    {% endif %}
+    {% endfor %}
+
+    {% for tag in terms %}
+    {# Scale font size from 1.2rem to 3.0rem #}
+    {% set count = tag.pages | length %}
+    {% set weight = 0.5 %}
+    {% if max_count > 1 %}
+    {% set weight = (count - 1) / (max_count - 1) %}
+    {% endif %}
+
+    {% set font_size = 0.6 + (weight * 1.3) %}
+
+    <a href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}"
+        style="font-size: {{ font_size }}rem; opacity: {{ 0.7 + (weight * 0.3) }};" class="tag-item">
+        {{ tag.name }}<span class="tag-count">({{ count }})</span>
+    </a>
+    {% endfor %}
+</div>
 
 {% endblock content %}
