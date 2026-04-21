@@ -80,6 +80,3 @@ I am the only person in my home to be Vegetarian and they find it very hard to d
 
 Completed? Congratulationssss!
 [_You are now emotionally connected to my family kitchen._]
-
-Want to share your experience about the food or any suggestions? 
-You can always <a href="mailto:i@preranasubedi.com.np">email</a> me.
