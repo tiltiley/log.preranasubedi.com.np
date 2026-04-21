@@ -6,14 +6,16 @@
 
   {% if term.content %}
   <div class="tag-content">
-    {{ term.content | safe }}
+    {% set content = term.content | replace(from="[<em>", to='<em class="inner-voice">') | replace(from="</em>]", to="</em>") %}
+    {{ content | safe }}
   </div>
   {% else %}
     {% set tag_section = get_section(path="tags/_index.md") %}
     {% for p in tag_section.pages %}
       {% if p.title == term.name %}
         <div class="tag-content">
-          {{ p.content | safe }}
+          {% set content = p.content | replace(from="[<em>", to='<em class="inner-voice">') | replace(from="</em>]", to="</em>") %}
+          {{ content | safe }}
         </div>
       {% endif %}
     {% endfor %}

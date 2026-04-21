@@ -2,6 +2,7 @@
 {% block content %}
 <div class="tag-description-page">
   <h1>{{ page.title }}</h1>
-  {{ page.content | safe }}
+  {% set content = page.content | replace(from="[<em>", to='<em class="inner-voice">') | replace(from="</em>]", to="</em>") %}
+  {{ content | safe }}
 </div>
 {% endblock content %}
