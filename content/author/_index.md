@@ -1,5 +1,5 @@
 +++
-title = "Sunakhari"
+title = "सुनाखरी"
 +++
 नमस्ते !
 
