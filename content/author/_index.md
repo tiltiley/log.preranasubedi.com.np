@@ -1,14 +1,9 @@
 +++
-title = "I'm Prerana"
+title = "Sunakhari"
 +++
-Hi, Hello and नमस्ते (Namaste) 🙏
+नमस्ते !
 
-![Hehehe.jpeg](/Images/Hehehe.jpeg)
+![me.jpeg](/Images/me.jpeg)
 
-I'd like to welcome you to my little garden where I post about the things that interests me.
-
-Currently, this is where I share the recipes of the food I grew up eating, the dishes my family makes with love, and the flavors I want my national and international friends to taste and experience. 
-
-You can expect comfort food, family stories, a little chaos, and lots of spice with loooove😉
-
-Come on roll your sleeves and prepare to dine well! 😋 
+म जूनमा फूलेकी सुनाखरी ।
+जीवनलाई अघि बढाउने क्रममा रमाएर बस्ने मेरो चाहनाले कल्पनामा मग्न भै मेरो ठूलो जीवनको सानो हिस्सा स्वरूप एउटा पृष्ठ बनाएकी छु । मेरा उहि कल्पनाको गगनमा रहेका आकांक्षाहरु जमीनमा उतार्ने सानो प्रयास ।
