@@ -207,9 +207,17 @@ time sup {
   vertical-align: super;
 }
 
-.date, .tag {
+ .date, .tag {
   display: flex;
   justify-content: flex-end;
+}
+
+.tag-content {
+  margin-bottom: 3rem;
+  font-style: italic;
+  color: var(--color-text-secondary);
+  border-bottom: 1px dotted var(--color-border-dotted);
+  padding-bottom: 1rem;
 }
 
 .tag {
