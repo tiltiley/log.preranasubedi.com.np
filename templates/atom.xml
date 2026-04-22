@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="{{ get_url(path="feed.xsl", trailing_slash=false) | safe }}" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>{{ config.title }}</title>
+    <subtitle>{{ config.description }}</subtitle>
     <link href="{{ config.base_url }}"/>
+    <link href="{{ get_url(path="atom.xml", trailing_slash=false) | safe }}" rel="self" type="application/atom+xml"/>
     <updated>{{ last_updated | date(format="%+") }}</updated>
     <id>{{ config.base_url }}</id>
     {%- for page in pages %}
@@ -13,9 +16,9 @@
         <id>{{ page.permalink }}</id>
         <content type="html"><![CDATA[
             {% set content = page.content | replace(from="[<em>", to="<u><em>") | replace(from="</em>]", to="</em></u>") %}
-            {{ content | safe }}
-            <p><br><i>You're awesome for reading this via RSS.</i></p>
+            {{ content | replace(from='src="/', to='src="' ~ config.base_url ~ '/') | replace(from='href="/', to='href="' ~ config.base_url ~ '/') | safe }}
         ]]></content>
     </entry>
     {%- endfor %}
 </feed>
+

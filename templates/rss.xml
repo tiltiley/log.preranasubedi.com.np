@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+<?xml-stylesheet href="{{ get_url(path="feed.xsl", trailing_slash=false) | safe }}" type="text/xsl"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>{{ config.title }}</title>
         <link>{{ config.base_url }}</link>
         <description>{{ config.description }}</description>
+        <atom:link href="{{ get_url(path="rss.xml", trailing_slash=false) | safe }}" rel="self" type="application/rss+xml" />
         {%- for page in pages %}
         <item>
             <title>{{ page.title }}</title>
@@ -13,10 +15,10 @@
             <guid>{{ page.permalink }}</guid>
             <description><![CDATA[
                 {% set content = page.content | replace(from="[<em>", to="<u><em>") | replace(from="</em>]", to="</em></u>") %}
-                {{ content | safe }}
-                <p><br><i>You're awesome for reading this via RSS.</i></p>
+                {{ content | replace(from='src="/', to='src="' ~ config.base_url ~ '/') | replace(from='href="/', to='href="' ~ config.base_url ~ '/') | safe }}
             ]]></description>
         </item>
         {%- endfor %}
     </channel>
 </rss>
+
