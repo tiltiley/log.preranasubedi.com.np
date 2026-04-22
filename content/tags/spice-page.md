@@ -1,6 +1,5 @@
 +++
 title = "The Silly Spice Page"
-template = "tags/description.html"
 +++
 
 I'd like to welcome you to my little kitchen.
