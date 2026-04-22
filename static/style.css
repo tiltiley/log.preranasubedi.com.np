@@ -390,6 +390,11 @@ hr::before {
   }
 }
 
+.scroll-hint-container {
+  text-align: center;
+  margin: 0rem 0 3rem 0;
+}
+
 .previous-months-accordion {
   margin: 5rem 0;
 }
