@@ -4,22 +4,15 @@
 <div class="logs">
   <h1 class="p-name"><a href="{{ config.base_url }}">#{{ term.name }}</a></h1>
 
-  {% if term.content %}
-  <div class="tag-content">
-    {% set content = term.content | replace(from="[<em>", to='<em class="inner-voice">') | replace(from="</em>]", to="</em>") %}
-    {{ content | safe }}
-  </div>
-  {% else %}
-    {% set tag_section = get_section(path="tags/_index.md") %}
-    {% for p in tag_section.pages %}
-      {% if p.title == term.name %}
-        <div class="tag-content">
-          {% set content = p.content | replace(from="[<em>", to='<em class="inner-voice">') | replace(from="</em>]", to="</em>") %}
-          {{ content | safe }}
-        </div>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
+  {% set tag_section = get_section(path="tags/_index.md") %}
+  {% for p in tag_section.pages %}
+    {% if p.title == term.name %}
+      <div class="tag-content">
+        {% set content = p.content | replace(from="[<em>", to='<em class="inner-voice">') | replace(from="</em>]", to="</em>") %}
+        {{ content | safe }}
+      </div>
+    {% endif %}
+  {% endfor %}
 
   <section>
     {% set prev_year = "" %}
