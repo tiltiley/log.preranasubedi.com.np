@@ -1,3 +1,4 @@
+{% import "macros.html" as macros %}
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -17,18 +18,21 @@
 
 <body>
     {% block content %} {% endblock %}
-</body>
 
-<footer>
-  {% block footer %}
-  <p>
-  <a href="/" >Latest</a>
-  <a href="/rss.xml">Feed</a>
-  <a href="/author" >Author</a>
-  <a href="https://preranasubedi.com.np" >Gallery</a>
-  <a href="/nexus" >Nexus</a>
-  <a href="/tags" >Tags</a>
-  </p>
-  {% endblock footer %}
-</footer>
+    <footer>
+      {% block footer %}
+      <p>
+      <a href="/" >Latest</a>
+      <a href="/rss.xml">Feed</a>
+      <a href="/author" >Author</a>
+      <a href="https://preranasubedi.com.np" >Gallery</a>
+      <a href="/nexus" >Nexus</a>
+      <a href="/tags" >Tags</a>
+      </p>
+      {% endblock footer %}
+    </footer>
+
+    {% set main_section = get_section(path="_index.md") %}
+    {{ macros::archives(pages=main_section.pages) }}
+</body>
 </html>

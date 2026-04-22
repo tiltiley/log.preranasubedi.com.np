@@ -322,14 +322,21 @@ time sup {
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 8rem 0 2.5rem 0;
+}
+
+footer p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
 }
 
 footer a {
   text-decoration: none;
   color: inherit;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   font-weight: 800;
   font-size: 0.9rem;
 }
