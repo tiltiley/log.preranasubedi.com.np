@@ -2,7 +2,7 @@
   description = "A flake with zola for blogging.";
 
   # Flake inputs
-  inputs.nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*.tar.gz";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
   # Flake outputs
   outputs = { self, nixpkgs }:
@@ -27,14 +27,11 @@
           packages = with pkgs; [
             zola
             (writeShellScriptBin "now" ''
-              current_date=$(date +"%Y-%m-%dT%H:%M:%S%z")
+              current_date=$(date +"%Y-%m-%dT%H:%M:%S%:z")
               printf "%s" "$current_date" | wl-copy
               echo "$current_date"
             '')
           ];
-
-          # Set any environment variables for your dev shell
-          env = { };
 
           # Add any shell logic you want executed any time the environment is activated
           shellHook = ''
