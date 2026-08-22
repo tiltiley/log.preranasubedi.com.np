@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://log.preranasubedi.com.np/sitemap.xml
