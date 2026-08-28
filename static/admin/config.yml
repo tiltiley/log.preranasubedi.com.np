@@ -2,7 +2,7 @@ backend:
   name: github
   branch: main
   repo: tiltiley/log.preranasubedi.com.np
-  auth_methods: [oauth]
+  auth_methods: [token]
   base_url: https://log.preranasubedi.com.np
 
 media_folder: /static/Images
