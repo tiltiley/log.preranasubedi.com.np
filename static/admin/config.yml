@@ -1,0 +1,48 @@
+backend:
+  name: github
+  branch: main
+  repo: tiltiley/log.preranasubedi.com.np
+  auth_methods: [oauth]
+
+media_folder: /static/Images
+public_folder: /Images
+
+logo:
+  src: http://127.0.0.1:1111/Images/mee.jpeg
+  show_in_header: true
+
+app_title: Flux::Admin
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    format: toml-frontmatter
+    folder: /content
+
+    fields:
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Date
+        name: date
+        widget: datetime
+        type: datetime
+        input_timezone: Asia/Kathmandu
+
+      - label: Taxonomies
+        name: taxonomies
+        widget: object
+        fields:
+          - label: Tags
+            name: tags
+            widget: list
+            field:
+              label: Tag
+              name: tag
+              widget: string
+
+      - label: Body
+        name: body
+        widget: markdown
