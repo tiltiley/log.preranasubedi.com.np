@@ -3,12 +3,13 @@ backend:
   branch: main
   repo: tiltiley/log.preranasubedi.com.np
   auth_methods: [oauth]
+  base_url: https://log.preranasubedi.com.np
 
 media_folder: /static/Images
 public_folder: /Images
 
 logo:
-  src: http://127.0.0.1:1111/Images/mee.jpeg
+  src: https://log.preranasubedi.com.np/Images/mee.jpeg
   show_in_header: true
 
 app_title: Flux::Admin
